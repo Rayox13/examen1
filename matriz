@@ -1,0 +1,17 @@
+corto = [[10, 6], [3, 5]]
+largo= [[9, 2, 10, 6], [16, 10, 6, 3], [3, 3, 5, 5], [0, 2, 1, 7]]
+
+def is_contained(corto, largo):
+    fil1, colum1 = len(corto), len(corto[0])
+    fil2, colum2 = len(largo), len(largo[0])
+
+    if fil1> fil2 or colum1 > colum2:
+        return False
+
+    for k in range(fil2 - fil1 + 1):
+        for z in range(colum2 - colum1 + 1):
+            calculo = [fila[z:z + colum1] for fila in largo[k:k + fil1]]
+            if calculo == corto:
+                return True
+    return False
+
