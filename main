@@ -1,0 +1,115 @@
+from editorial import editorial
+from Usuarios import Usuarios
+
+Cosa1 = editorial("EDITSA", "California,USA", "www.editsa.com"
+                  ," Niki Vindaz", "costarica", "Las lunas", "12/02/2002", "")
+Cosa2 = editorial("notariRS", "Sanjose,CR", "www.Norati.com", "Nico Fernandez", "mexico", "Sueños", "31/03/2012", "")
+Cosa3 = editorial("EditorialPeniel", "Colombia,bogota", "www.Peniel.com", "Jason Fren", "venezulea",
+                  "El poder de cambiar", "01/03/2012", "")
+Cosa4 = editorial("Gamesstop", "España,barcelona", "www.Gamestop.com", "German Garmendia", "España",
+                  "Como hacer tu propio juego", "27/06/2019", "")
+Cosa5 = editorial("NewIBM", "USA,Arizona", "www.NewIbm.com", " Dante gebel", "Argentina", "Las aventuras de Dante",
+                  "21/09/2020", "")
+
+Persona1 = Usuarios("604740878", "Nick Marchena")
+
+Persona4 = Usuarios("12343458", " Jorge felix ")
+o=0
+i =int(input("Selecione el usuario (2 Est )  ! ( 1 Prof)"))
+i=o
+if o == 2:
+ print("hola " + Persona1.getnombre() + " bienvenido su cedula es  " + Persona1.getCedula() + " acceso de Estudiante")
+else:
+ print("hola "+Persona4.getnombre()+" bienvenido su cedula es " + Persona4.getCedula()+ " acceso de Profesor")
+
+print()
+N=0
+i =int(input("Desea ver sus libros disponibles presione 3 para ver mas opciones presione 4"))
+i=N
+
+if i ==3:
+    print("mostrando libros")
+
+    print('=========================================')
+    print(' Book 1     Datos del Libro')
+    print('=========================================')
+    print(' Editorial............: {0}'.format(Cosa1.getNombre()))
+    print(' Pais........: {0}'.format(Cosa1.getCiudad_pais_estado()))
+    print(' web......: {0}'.format(Cosa1.getwebsite()))
+    print(' Nombre autor........: {0}'.format(Cosa1.getCn()))
+    print(' Nacionalidad..: {0}'.format(Cosa1.getN()))
+    print(' Titulo.......: {0}'.format(Cosa1.getTi()))
+    print(' fecha........: {0}'.format(Cosa1.getFecha()))
+    print(' descripcion........: {0}'.format(Cosa1.getdesc()))
+    print('------------------------------------------')
+
+    print('=========================================')
+    print('  Book 2   Datos del Libro')
+    print('=========================================')
+    print(' Editorial............: {0}'.format(Cosa2.getNombre()))
+    print(' Pais........: {0}'.format(Cosa2.getCiudad_pais_estado()))
+    print(' web......: {0}'.format(Cosa2.getwebsite()))
+    print(' Nombre autor........: {0}'.format(Cosa2.getCn()))
+    print(' Nacionalidad..: {0}'.format(Cosa2.getN()))
+    print(' Titulo.......: {0}'.format(Cosa2.getTi()))
+    print(' fecha........: {0}'.format(Cosa2.getFecha()))
+    print(' descripcion........: {0}'.format(Cosa2.getdesc()))
+    print('------------------------------------------')
+
+    print()
+
+    print('=========================================')
+    print(' Book 3     Datos del Libro')
+    print('=========================================')
+    print(' Editorial............: {0}'.format(Cosa3.getNombre()))
+    print(' Pais........: {0}'.format(Cosa3.getCiudad_pais_estado()))
+    print(' web......: {0}'.format(Cosa3.getwebsite()))
+    print(' Nombre autor........: {0}'.format(Cosa3.getCn()))
+    print(' Nacionalidad..: {0}'.format(Cosa3.getN()))
+    print(' Titulo.......: {0}'.format(Cosa3.getTi()))
+    print(' fecha........: {0}'.format(Cosa3.getFecha()))
+    print(' descripcion........: {0}'.format(Cosa3.getdesc()))
+    print('------------------------------------------')
+
+    print()
+
+    print('=========================================')
+    print('   Book 4   Datos del Libro')
+    print('=========================================')
+    print(' Editorial............: {0}'.format(Cosa4.getNombre()))
+    print(' Pais........: {0}'.format(Cosa4.getCiudad_pais_estado()))
+    print(' web......: {0}'.format(Cosa4.getwebsite()))
+    print(' Nombre autor........: {0}'.format(Cosa4.getCn()))
+    print(' Nacionalidad..: {0}'.format(Cosa4.getN()))
+    print(' Titulo.......: {0}'.format(Cosa4.getTi()))
+    print(' fecha........: {0}'.format(Cosa4.getFecha()))
+    print(' descripcion........: {0}'.format(Cosa4.getdesc()))
+    print('------------------------------------------')
+
+    print()
+
+    ## Accessing vehicle data
+    print('=========================================')
+    print('    Book 5        Datos del Libro')
+    print('=========================================')
+    print(' Editorial............: {0}'.format(Cosa5.getNombre()))
+    print(' Pais........: {0}'.format(Cosa5.getCiudad_pais_estado()))
+    print(' web......: {0}'.format(Cosa5.getwebsite()))
+    print(' Nombre autor........: {0}'.format(Cosa5.getCn()))
+    print(' Nacionalidad..: {0}'.format(Cosa5.getN()))
+    print(' Titulo.......: {0}'.format(Cosa5.getTi()))
+    print(' fecha........: {0}'.format(Cosa5.getFecha()))
+    print(' descripcion........: {0}'.format(Cosa5.getdesc()))
+    print('------------------------------------------')
+else:i = 4
+print()
+print("Tus libros estan listos "
+      " mostrar libros (1) "
+      " agregar notas a tus libro (2) "
+      " mostrar tus notas (3) ")
+
+
+
+
+
+
