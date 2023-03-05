@@ -1,0 +1,41 @@
+from autor import autor
+from libro import libro
+
+class editorial(autor,libro):
+
+
+ _Nombre=""
+ _Ciudad_pais_estado=""
+ _website=""
+
+
+     
+ def __init__(self, Nombre, Ciudad_pais_estado,website,Cn,N,Ti,Fecha,desc):
+     self.setCn(Cn)
+     self.setN(N)
+     self.setTi(Ti)
+     self.setFecha(Fecha)
+     self.setdesc(desc)
+     self.__Nombre = Nombre
+     self.__Ciudad_pais_estado = Ciudad_pais_estado
+     self.__website=website
+
+ 
+ 
+ def setNombre(self, Nombre):
+        self.__Nombre= Nombre
+
+ def getNombre(self):
+        return self.__Nombre
+
+ def setCiudad_pais_estado(self,Ciudad_pais_estado):
+        self.__Ciudad_pais_estado = Ciudad_pais_estado
+
+ def getCiudad_pais_estado(self):
+        return self.__Ciudad_pais_estado
+
+ def setwebsite(self, website):
+        self.__website = website
+
+ def getwebsite(self):
+        return self.__website
