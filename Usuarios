@@ -1,0 +1,23 @@
+class Usuarios:
+   _Cedula:" "
+   _nombre:" "
+
+
+   def __init__(self,Cedula,nombre):
+       self.__Cedula = Cedula
+       self.__nombre = nombre
+
+
+
+   def setCedula(self, Cedula):
+       self.__Cedula = Cedula
+
+   def getCedula(self):
+       return self.__Cedula
+
+   def setnombre(self, nombre):
+       self.__nombre = nombre
+
+   def getnombre(self):
+       return self.__nombre
+
