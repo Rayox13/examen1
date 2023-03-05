@@ -1,0 +1,24 @@
+class libro:
+ _Ti=""
+ _Fecha=""
+ _desc=""
+
+ def setTi(self, Ti):
+        self.__Ti = Ti
+
+ def getTi(self):
+        return self.__Ti
+
+
+ def setFecha(self, Fecha):
+        self.__Fecha =Fecha
+
+ def getFecha(self):
+        return self.__Fecha
+
+ def setdesc(self, desc):
+        self.__desc =desc
+
+ def getdesc(self):
+        return self.__desc
+
