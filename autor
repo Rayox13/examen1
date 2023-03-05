@@ -1,0 +1,16 @@
+class autor:
+ _Cn=""
+ _N=""
+
+ def setCn(self, Cn):
+        self.__Cn = Cn
+
+ def getCn(self):
+        return self.__Cn
+
+ def setN(self, N):
+        self.__N = N
+
+ def getN(self):
+        return self.__N
+
